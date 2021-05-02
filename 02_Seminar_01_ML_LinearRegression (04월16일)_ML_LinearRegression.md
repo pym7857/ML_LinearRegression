@@ -45,7 +45,7 @@ X=[3,5,7], Y=[10,16,22] 라고 가정했을 때, X=4 일때 Y(가격)는 얼마�
 이를 계산할 때, <b>최소 제곱법</b> 또는 <b>LSM(Least Square Method)</b>기법을 사용합니다.<br>
 최소제곱법은 $`Cost(w, b)`$로 나타냅니다. <br>
 
-![pic1](https://git.lsis.com/ympark4/wiki/raw/master/02_Seminar/01_ML_LinearRegression%20(04%EC%9B%9416%EC%9D%BC)/img/pic1.PNG)
+![pic1](img/pic1.PNG)
 
 목표 f(x)로부터 얼마나 잘못되었는지를 그래프로 표현해보았습니다. <br>
 현재 X, Y 값에 비추어 보았을 때, 각각의 차이 값은 <b>7, 11, 15</b> 만큼 차이가 납니다. <br>

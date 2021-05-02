@@ -82,7 +82,7 @@ Cost(w,b) = {1 \over m} * \sum_{i=1}^{m}(({W*X_i}+b)-{y_i})^2
 ```
 을 구하면 되는 것 입니다. 
 
-![pic2](https://git.lsis.com/ympark4/wiki/raw/master/02_Seminar/01_ML_LinearRegression%20(04%EC%9B%9416%EC%9D%BC)/img/pic2.PNG)
+![pic2](img/pic2.PNG)
 
 >만약, 위와 같이 기울기(w)가 조금만 달라지더라도 차이의 제곱을 하기 때문에 <br>
 >목표 값 에서 기울기가 멀어질수록 기하급수적으로 값이 차이가 나게 됩니다. <br><br>
@@ -91,7 +91,7 @@ Cost(w,b) = {1 \over m} * \sum_{i=1}^{m}(({W*X_i}+b)-{y_i})^2
 우리는 이러한 w값의 변화에 따른 $`Cost`$값을 XY평면에 그래프로 나타내 볼 수 있습니다. <br><br>
 b값(y절편)은 고정되어 있다는 가정 하에 그래프를 그려보았습니다. 
 
-![pic3](https://git.lsis.com/ympark4/wiki/raw/master/02_Seminar/01_ML_LinearRegression%20(04%EC%9B%9416%EC%9D%BC)/img/pic3.PNG)
+![pic3](img/pic3.PNG)
 
 앞서 w의 값은 1로 초기화를 했었고 우리가 구하려는 cost가 최소가 되는 w의 값, 즉 목표 값은 <br>
 $`f(x) = 3x + 1`$의 기울기 값인 3 이었습니다. <br><br>
@@ -107,7 +107,7 @@ $`f(x) = 3x + 1`$의 기울기 값인 3 이었습니다. <br><br>
 
 만약, w값이 고정되어있고, b값만 바뀌는 경우에는 
 
-![pic4](https://git.lsis.com/ympark4/wiki/raw/master/02_Seminar/01_ML_LinearRegression%20(04%EC%9B%9416%EC%9D%BC)/img/pic4.PNG)
+![pic4]((img/pic4.PNG)
 
 이런 식으로 그래프가 움직이게 될 것이며, 마찬가지로 b값 또한 `Global Optimum`을 가질 수 있게 됩니다. 
 
@@ -140,7 +140,7 @@ W의 값을 업데이트 해나가기 위해서는, 원래W의 값에서 기울�
 
 <b>✔머신러닝 [경사하강법]의 원리</b>
 
-![pic7](https://git.lsis.com/ympark4/wiki/raw/master/02_Seminar/01_ML_LinearRegression%20(04%EC%9B%9416%EC%9D%BC)/img/pic7.PNG)
+![pic7](img/pic7.PNG)
 
 다만 이때, 기울기 값이 너무 커서 너무 많은 값이 빼지는 상황을 방지하기 위해서 앞에 상수(α)를 붙입니다. 이 상수(α)를 `Learning rate`라고 합니다. <br> 
 (일반적으로 Learning rate는 <b>0.001</b>정도로 설정합니다.) <br>
@@ -173,7 +173,7 @@ b기울기 = $`\sum_{i=1}^{m}(2{X_i}w-2{y_i}+2b)*{1 \over m}`$
 W와 b가 Optimum한 값을 가지기 위해서는, W 접선의 기울기와 b 접선의 기울기가 모두 0이 되는 지점을 찾아야 했었습니다. <br>
 (아래 그래프에서 `cost가 최소가 되는 지점`은 w접선의 기울기가 0이 되는 지점 이었습니다.)
 
-![pic5](https://git.lsis.com/ympark4/wiki/raw/master/02_Seminar/01_ML_LinearRegression%20(04%EC%9B%9416%EC%9D%BC)/img/pic3.PNG)
+![pic5](img/pic5.PNG)
 
 식을 다시 정리해보면 이렇습니다. <br>
 
@@ -346,5 +346,5 @@ b=E(Y)-E(X)*W
 하지만 머신러닝에서 경사하강법을 쓰는 이유는, <br>
 현실세계에서는 아래 그림과 같이 고차함수의 형태로 모형이 나타내지기 때문에 계산이 상당히 어렵고, 시간이 오래 걸리기 때문입니다. 
 
-![pic6](https://git.lsis.com/ympark4/wiki/raw/master/02_Seminar/01_ML_LinearRegression%20(04%EC%9B%9416%EC%9D%BC)/img/pic6.PNG)
+![pic6](img/pic6.PNG)
 
